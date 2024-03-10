@@ -1,6 +1,6 @@
 {
   "name": "@lacunahub/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logging?",
   "main": "index.js",
   "scripts": {
@@ -35,11 +35,11 @@
   },
   "homepage": "https://github.com/LacunaHub/logger#readme",
   "devDependencies": {
-    "@types/node": "^20.11.25",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
+    "@types/node": "20.11.x",
+    "tsup": "8.0.x",
+    "typescript": "5.4.x"
   },
   "dependencies": {
-    "tslib": "^2.6.2"
+    "tslib": "2.6.x"
   }
 }
