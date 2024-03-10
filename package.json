@@ -1,0 +1,45 @@
+{
+  "name": "@lacunahub/logger",
+  "version": "1.0.0",
+  "description": "Logging?",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "format": "npx prettier . --write",
+    "prepare": "npm run build"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "dts": true
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@lacunahub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LacunaHub/logger.git"
+  },
+  "keywords": [
+    "logs",
+    "logger"
+  ],
+  "author": "Lacuna (https://github.com/LacunaHub)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LacunaHub/logger/issues"
+  },
+  "homepage": "https://github.com/LacunaHub/logger#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  }
+}
