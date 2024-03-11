@@ -1,5 +1,5 @@
 export class Logger {
-    constructor(public options: LoggerOptions) {
+    constructor(public options: LoggerOptions = {}) {
         if (options.dateFormat && typeof options.dateFormat !== 'function')
             throw new TypeError('[Logger] "dateFormat" must be a function')
     }
