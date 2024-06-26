@@ -51,6 +51,7 @@ export class TelegramLogger {
             body: JSON.stringify({
                 chat_id: this.options.chatId,
                 text: `*[${level}]* ${message}`,
+                parse_mode: 'Markdown',
                 disable_notification: !['warn', 'error'].includes(level)
             })
         })
